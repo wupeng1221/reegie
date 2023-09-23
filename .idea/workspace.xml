@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c9bae2-ebf6-4203-ae00-784f6c4f5d2a" name="Changes" comment="Day1-实现了登录验证，增加员工与员工分页查询">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e13689be-ee4b-4c70-a3ab-0da4bf347c85.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e13689be-ee4b-4c70-a3ab-0da4bf347c85.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e13689be-ee4b-4c70-a3ab-0da4bf347c85/storage_v2/_src_/schema/reegie.8TVHyA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e13689be-ee4b-4c70-a3ab-0da4bf347c85/storage_v2/_src_/schema/reegie.8TVHyA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="e2c9bae2-ebf6-4203-ae00-784f6c4f5d2a" name="Changes" comment="实现员工状态修改与信息修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wup/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wup/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wup/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wup/mapper/EmployeeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wup/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wup/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wup/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wup/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wup/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wup/controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wup/mapper/EmployeeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wup/mapper/EmployeeMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wup/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wup/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wup/service/impl/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wup/service/impl/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/EmployeeMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,20 +27,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;history&quot;: [
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
     {
-      &quot;state&quot;: &quot;OPEN&quot;,
-      &quot;assignee&quot;: &quot;wupeng1221&quot;,
-      &quot;author&quot;: &quot;wupeng1221&quot;
+      "state": "OPEN",
+      "assignee": "wupeng1221",
+      "author": "wupeng1221"
+    },
+    {
+      "state": "OPEN",
+      "author": "wupeng1221"
     }
   ],
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;wupeng1221&quot;,
-    &quot;author&quot;: &quot;wupeng1221&quot;
+  "lastFilter": {
+    "state": "OPEN",
+    "author": "wupeng1221"
   }
-}</component>
+}]]></component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -144,7 +143,7 @@
       <workItem from="1695381954383" duration="11103000" />
       <workItem from="1695400491276" duration="66000" />
       <workItem from="1695400560023" duration="715000" />
-      <workItem from="1695436226411" duration="6817000" />
+      <workItem from="1695436226411" duration="7224000" />
     </task>
     <task id="LOCAL-00001" summary="Day1-实现了登录验证，增加员工与员工分页查询">
       <option name="closed" value="true" />
@@ -154,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695400827745</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="实现员工状态修改与信息修改">
+      <option name="closed" value="true" />
+      <created>1695450628758</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695450628758</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +183,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Day1-实现了登录验证，增加员工与员工分页查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day1-实现了登录验证，增加员工与员工分页查询" />
+    <MESSAGE value="实现员工状态修改与信息修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现员工状态修改与信息修改" />
   </component>
 </project>

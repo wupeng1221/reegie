@@ -29,6 +29,38 @@
             #{updateTime}, #{createUser}, #{updateUser}
         )
     </insert>
+    <update id="update">
+        update employee
+        <set>
+            <!-- 注意这里的动态sql里面if标签的test中的属性是传入的Json参数中的属性-->
+            <!-- 也就是实体类中封装的对象的属性名，是驼峰形式的参数-->
+            <if test="username != null">
+                username = #{username},
+            </if>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="phone != null">
+                phone = #{phone},
+            </if>
+            <if test="sex != null">
+                sex = #{sex},
+            </if>
+            <if test="idNumber != null">
+                id_number = #{idNumber},
+            </if>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+            <if test="updateUser != null">
+                update_user = #{updateUser}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
 
     <select id="findByUsernameAndPassword" resultType="com.wup.entity.Employee">
         select
@@ -51,6 +83,13 @@
                 name like concat('%',#{name},'%')
             </if>
         </where>
+        order by update_time desc
+    </select>
+    <select id="findById" resultType="com.wup.entity.Employee">
+        select
+        <include refid="base_columns"></include>
+        from employee where
+        id = #{id}
     </select>
 
 </mapper>

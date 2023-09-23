@@ -41,6 +41,11 @@ public class EmployeeServiceImpl implements EmployeeService{
     }
 
     @Override
+    public Employee findById(Integer id) {
+        return employeeMapper.findById(id);
+    }
+
+    @Override
     public void save(Employee employee) {
         // 密码进行md5加密
         // 用户的初始化密码 123456
@@ -60,6 +65,13 @@ public class EmployeeServiceImpl implements EmployeeService{
         List<Employee> employeeList = employeeMapper.getAllByName(name);
         PageInfo<Employee> pageInfo = new PageInfo<>(employeeList);
         return new PageBean<>(pageInfo.getTotal(), pageInfo.getList());
+    }
+
+    @Override
+    public void update(Employee employee) {
+        employee.setUpdateTime(LocalDateTime.now());
+        employee.setUpdateUser((Integer) httpServletRequest.getSession().getAttribute("id"));
+        employeeMapper.update(employee);
     }
 }
 

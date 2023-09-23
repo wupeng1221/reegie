@@ -16,8 +16,10 @@ import java.util.List;
 public interface EmployeeMapper {
     Employee findByUsername(Employee employee);
     Employee findByUsernameAndPassword(Employee employee);
+    Employee findById(Integer id);
     void insert(Employee employee);
     List<Employee> getAllByName(String name);
+    void update(Employee employee);
 
 }
 

@@ -1,6 +1,5 @@
 package com.wup.controller;
 
-import com.alibaba.fastjson.JSONObject;
 import com.wup.common.PageBean;
 import com.wup.common.Result;
 import com.wup.entity.Employee;
@@ -24,6 +23,11 @@ public class EmployeeController {
     private EmployeeService employeeService;
     @Autowired
     private HttpServletRequest request;
+    /**
+     * 进行登录以及登录校验
+     * @param employee 前端传入的json
+     * @return 返回给前端的json标准信息
+     */
     @PostMapping("/login")
     public Result<Object> login(@RequestBody Employee employee) {
         Employee byUsername = employeeService.findByUsername(employee);
@@ -58,12 +62,22 @@ public class EmployeeController {
         request.getSession().removeAttribute("jwt");
         return Result.success("退出成功");
     }
-
+    /**
+     * 增加员工
+     * @param employee 前端传入的json
+     * @return 返回给前端的json标准信息
+     */
     @PostMapping
     public Result<String> add(@RequestBody Employee employee) {
         employeeService.save(employee);
         return Result.success("新增员工成功");
     }
+    /**
+     * 员工分页查询
+     * @param page 页码
+     * @param pageSize 每页展示的数量
+     * @return 返回给前端的json标准信息
+     */
     @GetMapping("/page")
     public Result<Object> page(@Param("page") Integer page,
                                @Param("pageSize") Integer pageSize,
@@ -73,5 +87,28 @@ public class EmployeeController {
         // 直接返回pageBean对象即可
         return Result.success(pageBean);
     }
+    /**
+     * 用户状态修改以及信息修改
+     * @param employee 前端传入的json
+     * @return 返回给前端的json标准信息
+     */
+    @PutMapping
+    public Result updateAndModifyStatus(@RequestBody Employee employee) {
+        employeeService.update(employee);
+        return Result.success(null);
+    }
+
+    /**
+     * 返回id对应的员工信息
+     * @param id url中用户的id
+     * @return 返回给前端的json标准信息
+     */
+    @GetMapping("/{id}")
+    public Result findById(@PathVariable Integer id) {
+        Employee employee = employeeService.findById(id);
+        return Result.success(employee);
+    }
+
+
 
 }

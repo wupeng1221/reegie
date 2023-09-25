@@ -19,5 +19,33 @@ pagehelper:
 logging:
   level:
     org.springframework.jdbc.support.JdbcTransactionManager: debug
-
+#原生雪花算法的配置
+snow-flake:
+  start-timestamp: 1632423600000
+  worker-id-bits: 5
+  data-center-id-bits: 5
+  max-worker-id: -31
+  max-data-center-id: -31
+  sequence-bits: 12
+  worker-id-shift: 12
+  data-center-id-shift: 17
+  timestamp-left-shift: 22
+  sequence-mask: 4095
+  worker-id: 1
+  data-center-id: 1
+  last-timestamp: 1633559512345
+  sequence: 0
+#hutool雪花算法配置
+hutool:
+  snowflake:
+    worker-id: 1
+    data-center-id: 1
+upload:
+  path: /Users/brainwu/Desktop/java/JavaEE/reegie/reegie/src/main/resources/static/fig/
+aliyun:
+  oos:
+    endpoint: https://oss-cn-chengdu.aliyuncs.com
+    accessKeyId: LTAI5t8DsmoQVTzEn6GFAyby
+    accessKeySecret: tLVXfCWXQ7jzdAxOeM8JqQDPJDHKXI
+    bucketName: wupeng-javaweb
 

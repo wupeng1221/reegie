@@ -5,12 +5,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2c9bae2-ebf6-4203-ae00-784f6c4f5d2a" name="Changes" comment="实现员工状态修改与信息修改">
+      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/common/JacksonObjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/config/AliOOSProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/config/SnowflakeIdConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/controller/CommonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/controller/DishController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/dto/DishDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/entity/Dish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/entity/DishFlavor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/mapper/DishFlavorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/mapper/DishMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/service/DishFlavorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/service/DishService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/service/impl/DishFlavorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/service/impl/DishServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/utils/AliOSSUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wup/utils/SnowflakeIdGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/DishFlavorMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/DishMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/page/demo/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/00874a5e-0df2-446b-8f69-a30eb7d88ee8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/057dd338-e487-4bbc-a74c-0384c44a9ca3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/0a3b3288-3446-4420-bbff-f263d0c02d8e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/0f252364-a561-4e8d-8065-9a6797a6b1d3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/0f4bd884-dc9c-4cf9-b59e-7d5958fec3dd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/1405081e-f545-42e1-86a2-f7559ae2e276.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/1fdbfbf3-1d86-4b29-a3fc-46345852f2f8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/2a2e9d66-b41d-4645-87bd-95f2cfeed218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/2a50628e-7758-4c51-9fbb-d37c61cdacad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/2e96a7e3-affb-438e-b7c3-e1430df425c9.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/3fabb83a-1c09-4fd9-892b-4ef7457daafa.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/583df4b7-a159-4cfc-9543-4f666120b25f.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/5b8d2da3-3744-4bb3-acdc-329056b8259d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/740c79ce-af29-41b8-b78d-5f49c96e38c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/8306bced-9313-499b-b6b8-88aabcb410bd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/8dcfda14-5712-4d28-82f7-ae905b3c2308.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/9ec6fc2d-50d2-422e-b954-de87dcd04198.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/a53a4e6a-3b83-4044-87f9-9d49b30a8fdc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/c99e0aab-3cb7-4eaa-80fd-f47d4ffea694.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/d2f61d70-ac85-4529-9b74-6d9a2255c6d7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/e476f679-5c15-436b-87fa-8c4e9644bf33.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/ee04a05a-1230-46b6-8ad5-1a95b140fff3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/ef2b73f2-75d1-4d3a-beea-22da0e1421bd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fig/f966a38e-0780-40be-bb52-5699d13cb3d9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e13689be-ee4b-4c70-a3ab-0da4bf347c85.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e13689be-ee4b-4c70-a3ab-0da4bf347c85.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e13689be-ee4b-4c70-a3ab-0da4bf347c85/storage_v2/_src_/schema/reegie.8TVHyA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e13689be-ee4b-4c70-a3ab-0da4bf347c85/storage_v2/_src_/schema/reegie.8TVHyA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wup/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wup/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wup/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wup/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wup/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wup/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wup/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wup/mapper/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wup/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wup/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wup/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wup/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wup/ReegieApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wup/ReegieApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wup/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wup/config/WebConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wup/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wup/controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wup/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wup/entity/Employee.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wup/mapper/EmployeeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wup/mapper/EmployeeMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wup/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wup/service/EmployeeService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wup/service/impl/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wup/service/impl/EmployeeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wup/ReegieApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/wup/ReegieApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,23 +91,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN",
-      "assignee": "wupeng1221",
-      "author": "wupeng1221"
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;wupeng1221&quot;,
+      &quot;author&quot;: &quot;wupeng1221&quot;
     },
     {
-      "state": "OPEN",
-      "author": "wupeng1221"
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;author&quot;: &quot;wupeng1221&quot;
+    },
+    {
+      &quot;author&quot;: &quot;wupeng1221&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN",
-    "author": "wupeng1221"
+  &quot;lastFilter&quot;: {
+    &quot;author&quot;: &quot;wupeng1221&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -59,50 +125,112 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2VkYFfmxYbvsyheBZTo411Px6Gs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/brainwu/Desktop/java/JavaEE/reegie/reegie/src/main/resources/static&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;9f8ef7c9a5207a6efe4f417f345b931a&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowByte Code Viewer.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/brainwu/Desktop/java/JavaEE/reegie/reegie/src/main/resources/static/fig",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "spring.configuration.checksum": "9f8ef7c9a5207a6efe4f417f345b931a",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;MySQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "MySQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/fig" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/wup" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/backend/page/demo" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wup.config" />
+      <recent name="com.wup.utils" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ReegieApplication (1)">
+    <configuration name="ReegieApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reegie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wup" />
+      <option name="MAIN_CLASS_NAME" value="com.wup.ReegieApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReegieApplicationTests.testDownloadFromAliyunOOS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reegie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wup" />
+      <option name="MAIN_CLASS_NAME" value="com.wup.ReegieApplicationTests" />
+      <option name="METHOD_NAME" value="testDownloadFromAliyunOOS" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReegieApplicationTests.testSnowflakeIdGenerate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reegie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wup" />
+      <option name="MAIN_CLASS_NAME" value="com.wup.ReegieApplicationTests" />
+      <option name="METHOD_NAME" value="testSnowflakeIdGenerate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReegieApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="reegie" />
@@ -128,6 +256,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ReegieApplication (1)" />
+        <item itemvalue="JUnit.ReegieApplicationTests.testDownloadFromAliyunOOS" />
+        <item itemvalue="JUnit.ReegieApplicationTests" />
+        <item itemvalue="JUnit.ReegieApplicationTests.testSnowflakeIdGenerate" />
       </list>
     </recent_temporary>
   </component>
@@ -144,6 +275,12 @@
       <workItem from="1695400491276" duration="66000" />
       <workItem from="1695400560023" duration="715000" />
       <workItem from="1695436226411" duration="7224000" />
+      <workItem from="1695450833533" duration="208000" />
+      <workItem from="1695451052590" duration="440000" />
+      <workItem from="1695451500541" duration="19146000" />
+      <workItem from="1695570772341" duration="5110000" />
+      <workItem from="1695575910080" duration="1380000" />
+      <workItem from="1695614367116" duration="25671000" />
     </task>
     <task id="LOCAL-00001" summary="Day1-实现了登录验证，增加员工与员工分页查询">
       <option name="closed" value="true" />
@@ -161,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695450628758</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="实现员工状态修改与信息修改">
+      <option name="closed" value="true" />
+      <created>1695450843719</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695450843719</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,18 +317,42 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Day1-实现了登录验证，增加员工与员工分页查询" />
     <MESSAGE value="实现员工状态修改与信息修改" />
     <option name="LAST_COMMIT_MESSAGE" value="实现员工状态修改与信息修改" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.wup.dto.DishDto" memberName="flavors" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

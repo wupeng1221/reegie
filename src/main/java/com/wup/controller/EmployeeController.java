@@ -44,7 +44,7 @@ public class EmployeeController {
         } else if (byUsernameAndPassword.getStatus() != 1) {
             return Result.error("该用户已被禁止登录");
         } else {
-            Integer id = byUsernameAndPassword.getId();
+            Long id = byUsernameAndPassword.getId();
             String name = byUsernameAndPassword.getName();
             String username = byUsernameAndPassword.getUsername();
             Map<String, Object> claims = new HashMap<>();
@@ -74,15 +74,15 @@ public class EmployeeController {
     }
     /**
      * 员工分页查询
-     * @param page 页码
+     * @param pageNum 页码
      * @param pageSize 每页展示的数量
      * @return 返回给前端的json标准信息
      */
     @GetMapping("/page")
-    public Result<Object> page(@Param("page") Integer page,
-                               @Param("pageSize") Integer pageSize,
+    public Result<Object> page(@RequestParam("page") Integer pageNum,
+                               @RequestParam("pageSize") Integer pageSize,
                                String name) {
-        PageBean<Employee> pageBean = employeeService.list(page, pageSize, name);
+        PageBean<Employee> pageBean = employeeService.list(pageNum, pageSize, name);
         // log.info(JSONObject.toJSONString(pageBean));
         // 直接返回pageBean对象即可
         return Result.success(pageBean);
@@ -104,7 +104,7 @@ public class EmployeeController {
      * @return 返回给前端的json标准信息
      */
     @GetMapping("/{id}")
-    public Result findById(@PathVariable Integer id) {
+    public Result findById(@PathVariable Long id) {
         Employee employee = employeeService.findById(id);
         return Result.success(employee);
     }

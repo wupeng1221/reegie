@@ -20,7 +20,7 @@ public class Employee implements Serializable {
     /**
      * 主键
      */
-    private Integer id;
+    private Long id;
 
     /**
      * 姓名
@@ -70,11 +70,11 @@ public class Employee implements Serializable {
     /**
      * 创建人
      */
-    private Integer createUser;
+    private Long createUser;
 
     /**
      * 修改人
      */
-    private Integer updateUser;
+    private Long updateUser;
 
 }

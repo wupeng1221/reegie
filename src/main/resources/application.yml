@@ -42,10 +42,5 @@ hutool:
     data-center-id: 1
 upload:
   path: /Users/brainwu/Desktop/java/JavaEE/reegie/reegie/src/main/resources/static/fig/
-aliyun:
-  oos:
-    endpoint: https://oss-cn-chengdu.aliyuncs.com
-    accessKeyId: LTAI5t8DsmoQVTzEn6GFAyby
-    accessKeySecret: tLVXfCWXQ7jzdAxOeM8JqQDPJDHKXI
-    bucketName: wupeng-javaweb
+
 
